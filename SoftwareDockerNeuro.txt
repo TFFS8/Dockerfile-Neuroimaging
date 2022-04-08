@@ -1,0 +1,72 @@
+    \n  "pkg_manager": "apt", \
+    \n  "instructions": [ \
+    \n    [ \
+    \n      "base", \
+    \n      "ubuntu:16.04" \
+    \n"     "nvidia-docker2" \
+    \n    ], \
+    \n    [ \
+    \n      "fsl", \
+    \n      { \
+    \n        "version": "5.0.10", \
+    \n        "method": "binaries" \
+    \n      } \
+    \n    ], \
+    \n    [ \
+    \n      "spm12", \
+    \n      { \
+    \n        "version": "r7771", \
+    \n        "method": "binaries" \
+    \n      } \
+    \n    ], \
+    \n    [ \
+    \n      "dcm2niix", \
+    \n      { \
+    \n        "version": "latest", \
+    \n        "method": "source" \
+    \n      } \
+    \n    ], \
+    \n    [ \
+    \n      "freesurfer", \
+    \n      { \
+    \n        "version": "6.0.1", \
+    \n        "method": "binaries" \
+    \n      } \
+    \n    ], \
+    \n    [ \
+    \n      "ants", \
+    \n      { \
+    \n        "version": "2.3.1", \
+    \n        "method": "binaries" \
+    \n      } \
+    \n    ], \
+    \n    [ \
+    \n      "mrtrix3", \
+    \n      { \
+    \n        "version": "3.0_RC3" \
+    \n      } \
+    \n    ], \
+    \n    [ \
+    \n      "miniconda", \
+    \n      { \
+    \n        "create_env": "neuro", \
+    \n        "conda_install": [ \
+    \n          "python=3.8", \
+    \n          "traits" \
+    \n        ], \
+    \n        "pip_install": [ \
+    \n          "nipype", \
+    \n          "dipy", \
+    \n          "numpy", \
+    \n          "canvas", \
+    \n          "pydicom", \
+    \n          "nibabel", \
+    \n          "scipy", \
+    \n          "dcm2bids", \
+    \n          "matplotlib", \
+    \n          "PyPDF2", \
+    \n          "PIL" \
+    \n        ] \
+    \n      } \
+    \n    ] \
+    \n  ] \
